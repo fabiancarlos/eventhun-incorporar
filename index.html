@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-    <meta charset="utf-8">
-	<title>Eventhun Incorporar customizado</title>
+  <meta charset="utf-8">
+	<title>Eventhun Incorporar - Exemplo</title>
+
+	<link href="assets/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+	<link href="assets/css/block.css" media="all" rel="stylesheet" type="text/css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="assets/js/underscore-min.js"></script> 
+	<script src="assets/js/eventhun.js"></script>
+	<script src="assets/js/application.js"></script>
+	
 </head>
 <body>
-	<h1>Eventhun Incorporar customizado</h1>
+	<div class="container">
+		<h3>Eventhun Incorporar - Exemplo</h3>
+		<p>Incorporar a programação de eventos de uma página em seu site.</p>
 
+		<!-- Template do bloco do evento que deve customizar -->
+		<script type="text/html" id='events-template'>
+			<div class="event-block">
+				<h4><%= title %></h4>
+				<p><%= description %></p>
+			</div>
+		</script>
+
+		<!-- Container on será acrescentado os eventos -->
+		<div id="eventhun-container"></div>
+
+	</div>
 </body>
 </html>
